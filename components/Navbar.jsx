@@ -20,12 +20,13 @@ const Navbar = () => {
             <FaCircle color='#147b74' size={15} />
             <span className={`${montserrat.className} text-xl xl:text-2xl text-center font-bold `}>non-proft.org</span>
         </div>
-        <div className="lg:flex hidden space-x-4 uppercase font-semibold text-base xl:text-xl text-[#7a7a7a]">
+        <div className="lg:flex items-center hidden space-x-4 uppercase font-semibold text-base 2xl:text-xl text-[#7a7a7a]">
             <Link href='/' className='text-[#147b74] transition-colors'>who we are</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>what we do</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>join us</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>blog</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>volunteer</Link>
+            <Button variant="secondary" className="bg-[#3cb4ac] hover:bg-[#147b74] hover:text-white font-bold">LOGIN</Button>
         </div>
         {/* Mobile Menu */}
         <div className="lg:hidden block" onClick={toggleMobileMenu}>
@@ -39,10 +40,7 @@ const Navbar = () => {
             <Link href='/' className='hover:text-[#147b74] transition-colors'>join us</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>blog</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>volunteer</Link>
-            <div className="flex items-center space-x-2 mt-6">
-                <Input type="number" placeholder="$100" className="w-4/6"></Input>
-                <Button className="bg-[#147b74]">Donate</Button>
-            </div>
+            <Button variant="secondary" className="bg-[#147b74] hover:text-white font-bold">LOGIN</Button>
         </div>
         )}
     </nav> );
