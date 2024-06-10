@@ -4,8 +4,6 @@ import {FaBars, FaCircle, FaTimes} from 'react-icons/fa'
 import {montserrat} from '@/components/fonts';
 import Link from "next/link";
 import { Button } from './ui/button';
-import { Input } from './ui/input';
-
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,8 +15,10 @@ const Navbar = () => {
     return ( 
     <nav className="flex justify-between items-center py-4 md:px-12 px-2">
         <div className="flex items-center space-x-2">
-            <FaCircle color='#147b74' size={15} />
-            <span className={`${montserrat.className} text-xl xl:text-2xl text-center font-bold `}>non-proft.org</span>
+            <Link href='/'>
+                <FaCircle color='#147b74' size={15} />
+                <span className={`${montserrat.className} text-xl xl:text-2xl text-center font-bold `}>non-proft.org</span>
+            </Link>
         </div>
         <div className="lg:flex items-center hidden space-x-4 uppercase font-semibold text-base 2xl:text-xl text-[#7a7a7a]">
             <Link href='/' className='text-[#147b74] transition-colors'>who we are</Link>
@@ -26,7 +26,9 @@ const Navbar = () => {
             <Link href='/' className='hover:text-[#147b74] transition-colors'>join us</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>blog</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>volunteer</Link>
-            <Button variant="secondary" className="bg-[#3cb4ac] hover:bg-[#147b74] hover:text-white font-bold">LOGIN</Button>
+            <Link href='/login'>
+                <Button variant="secondary" className="bg-[#3cb4ac] hover:bg-[#147b74] hover:text-white font-bold ml-2">LOGIN</Button>
+            </Link>
         </div>
         {/* Mobile Menu */}
         <div className="lg:hidden block" onClick={toggleMobileMenu}>
@@ -40,6 +42,7 @@ const Navbar = () => {
             <Link href='/' className='hover:text-[#147b74] transition-colors'>join us</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>blog</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>volunteer</Link>
+
             <Button variant="secondary" className="bg-[#147b74] hover:text-white font-bold">LOGIN</Button>
         </div>
         )}

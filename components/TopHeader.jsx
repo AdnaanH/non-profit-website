@@ -22,17 +22,17 @@ const TopHeader = () => {
                         <div className="space-y-2">
                             <h4 className="font-medium leading-none">Donate</h4>
                             <p className="text-sm text-muted-foreground">
-                                We will highly appreciate your contributions.
+                                We highly appreciate your contributions.
                             </p>
                         </div>
                         <form className="grid gap-2">
                             <Input type="number" placeholder="$100" />
-                            <Button className="bg-[#3cb4ac] hover:bg-[#147b74] mt-2">DONATE</Button>
+                            <Button className="bg-[#3cb4ac] hover:bg-[#147b74] my-4">DONATE</Button>
                             <small className="underline">Learn more</small>
                         </form>
                     </div>
                 </PopoverContent>
-                </Popover>
+            </Popover>
         </div>
     </div> 
 );
