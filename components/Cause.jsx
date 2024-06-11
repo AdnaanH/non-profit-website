@@ -16,6 +16,17 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/components/ui/alert-dialog"
 
 const Cause = () => {
     return ( 
@@ -50,7 +61,23 @@ const Cause = () => {
                     </form>
                 </CardContent>
                 <CardFooter className="flex justify-end">
-                    <Button className="bg-[#3cb4ac] hover:bg-[#147b74]">Support</Button>
+                    <AlertDialog>
+                        <AlertDialogTrigger asChild>
+                            <Button className="bg-[#3cb4ac] hover:bg-[#147b74]">Support</Button>
+                        </AlertDialogTrigger>
+                        <AlertDialogContent>
+                            <AlertDialogHeader>
+                            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                            <AlertDialogDescription>
+                                This action will redirect you to Paypal page for payment confirmation.
+                            </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                            <AlertDialogCancel>Cancel</AlertDialogCancel>
+                            <AlertDialogAction className="bg-[#3cb4ac] hover:bg-[#147b74]">Continue</AlertDialogAction>
+                            </AlertDialogFooter>
+                        </AlertDialogContent>
+                    </AlertDialog>
                 </CardFooter>
             </Card>
         </>
