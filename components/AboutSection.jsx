@@ -13,15 +13,15 @@ const AboutSection = () => {
                 />
            </div>
            <div className="grid lg:w-4/6 w-full lg:text-start text-center">                
-                <h1 className="uppercase lg:text-5xl text-3xl lg:text-start text-center font-bold text-white mb-4">Who we Are</h1>
-                <p className="mb-3">
+                <h1 className="uppercase lg:text-5xl text-3xl lg:text-start text-center font-bold text-white">Who we Are</h1>
+                <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
                 </p>
-                <p className="mb-2">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <br />
-                Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
                 </p>
-                <p className="mb-2">
+                <h2 className="text-white uppercase text-xl font-bold">Our Vital Mission</h2>
+                <p>
                 Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
                 </p>
                 <p>

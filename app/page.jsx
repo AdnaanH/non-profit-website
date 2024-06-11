@@ -7,7 +7,9 @@ export default function Home() {
     <>
       <Hero />
       <HeroCarousel />
-      <AboutSection />
+      <div id='about'>
+        <AboutSection />
+      </div>
     </>
   );
 }
