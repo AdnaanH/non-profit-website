@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
     return ( 
-        <div id="about" className="min-h-screen bg-[#3cb4ac] py-12 lg:px-16 px-4 flex lg:flex-row flex-col justify-between gap-10">
+        <div className="min-h-screen bg-[#3cb4ac] py-12 lg:px-16 px-4 flex lg:flex-row flex-col justify-between gap-10">
            <div className="grid lg:w-2/6 w-full gap-4">
                 <Image
                     src="/medical-illustration.png"
