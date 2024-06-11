@@ -25,6 +25,7 @@ const Navbar = () => {
             <Link href='#about' className='hover:text-[#147b74] transition-colors'>what we do</Link>
             <Link href='#joinus' className='hover:text-[#147b74] transition-colors'>join us</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>blog</Link>
+            <Link href='#connect' className='hover:text-[#147b74] transition-colors'>Connect</Link>
             <Link href='/login'>
                 <Button variant="secondary" className="bg-[#3cb4ac] hover:bg-[#147b74] hover:text-white font-bold ml-2">LOGIN</Button>
             </Link>
