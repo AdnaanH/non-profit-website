@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="lg:flex items-center hidden space-x-4 uppercase font-semibold text-base 2xl:text-xl text-[#7a7a7a]">
             <Link href='/' className='text-[#147b74] transition-colors'>who we are</Link>
             <Link href='#about' className='hover:text-[#147b74] transition-colors'>what we do</Link>
-            <Link href='/' className='hover:text-[#147b74] transition-colors'>join us</Link>
+            <Link href='#joinus' className='hover:text-[#147b74] transition-colors'>join us</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>blog</Link>
             <Link href='/' className='hover:text-[#147b74] transition-colors'>volunteer</Link>
             <Link href='/login'>
